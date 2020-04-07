@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="40dp"
+        android:id="@+id/spinner"
+        android:entries="@array/beer_colors"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/find_beer"
+        android:text="@string/button_text"
+        android:layout_below="@+id/spinner"
+        android:onClick="find_beer"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/brands"
+        android:text="@string/brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_beer"
+        android:layout_alignLeft="@+id/find_beer"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
