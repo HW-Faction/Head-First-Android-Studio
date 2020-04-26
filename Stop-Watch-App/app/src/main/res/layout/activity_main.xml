@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:layout_marginTop="50dp"
-        android:textSize="92sp"
+        android:textSize="60sp"
         android:id="@+id/timer"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_centerHorizontal="true" />
